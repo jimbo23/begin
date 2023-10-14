@@ -1,4 +1,4 @@
-import { useGetProductDetails } from './hooks/use-get-product-details';
+import { useGetProductDetails } from '../hooks/use-get-product-details';
 
 export const ProductDetails = () => {
   const { data } = useGetProductDetails();

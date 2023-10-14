@@ -4,6 +4,4 @@ export const httpClient = axios.create({
   baseURL: 'https://dummyjson.com/',
 });
 
-httpClient.interceptors.response.use((config) => {
-  return config.data;
-});
+httpClient.interceptors.response.use((config) => config.data);

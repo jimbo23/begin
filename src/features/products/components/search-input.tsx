@@ -1,15 +1,19 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const SearchInput = () => {
   const [query, setQuery] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    navigate(`/products/search/?q=${query}`, { replace: false });
+    setQuery('');
   };
 
   return (
     <form
-      className="absolute right-10 flex justify-center gap-[2px] group-[]:"
+      className="absolute right-4 flex justify-center gap-[2px] group-[]:"
       onSubmit={handleSubmit}
     >
       <input

@@ -1,10 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
 import { CategoryTabs } from '../features/products/components/category-tabs';
-import { SearchInput } from '../components/search-input';
+import { SearchInput } from '../features/products/components/search-input';
 
 export const MainLayout = () => (
   <div className="flex flex-col min-h-screen">
-    <header className="sticky top-0 z-10 flex h-16 bg-stone-50 w-full justify-center items-center shadow-stone-500 shadow-sm">
+    <header className="sticky top-0 z-10 flex h-16 px-6 bg-stone-50 w-full justify-start lg:justify-center items-center shadow-stone-500 shadow-sm">
       <Link to="/products">
         <h1 className="text-4xl font-extrabold text-stone-800 select-none">
           BEGIN.

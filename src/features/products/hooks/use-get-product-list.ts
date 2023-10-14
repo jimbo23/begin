@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import { httpClient } from '../../../api/http-client';
-import { ProductListResponse } from '../components/product-list';
+import { ProductListResponse } from '../types';
 
 export const useGetProductList = () => {
   const { category } = useParams<'category'>();
