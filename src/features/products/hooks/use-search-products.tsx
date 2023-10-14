@@ -1,5 +1,4 @@
 import { useQuery } from 'react-query';
-import { useSearchParams } from 'react-router-dom';
 import { httpClient } from '../../../api/http-client';
 import { ProductItemType } from '../types';
 
