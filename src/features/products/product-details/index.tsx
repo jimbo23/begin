@@ -42,6 +42,9 @@ export const ProductDetails = () => {
             $ {data?.price}
           </p>
           <p className="text-center my-2">Rating: {data?.rating} / 5.0</p>
+          <p className="text-center mt-8 mb-2 text-slate-600 text-lg italic self-center px-6">
+            {data?.description} / 5.0
+          </p>
         </div>
         <div className="flex flex-col gap-6">
           <button className="self-center w-[300px] py-4 rounded-sm text-xl font-semibold text-stone-50 bg-stone-900 hover:bg-stone-600 transition">
